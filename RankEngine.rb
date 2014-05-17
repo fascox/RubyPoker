@@ -78,6 +78,7 @@ class RankEngine
     pattern = sorted_faces.scan(/((.)\2{1,})/).map(&:first).reject {|c| c.size != 4}.first
 
     return 0, '' if pattern.nil?
+    card = pattern.squeeze
     return @rankings[:poker][:weight] + Card::weight(card), @rankings[:poker][:desc] + " of #{card}"
 
   end
@@ -87,8 +88,8 @@ class RankEngine
   def flush(hand)
 
     return 0, '' if hand.to_suits.scan(/./).uniq.length > 1
-    card = hand.to_suits.first
-    return @rankings[:flush][:weight],  @rankings[:flush][:desc] + "of #{card}"
+    card = hand.to_suits.squeeze
+    return @rankings[:flush][:weight],  @rankings[:flush][:desc] + " of #{card}"
 
   end
 

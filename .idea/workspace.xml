@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0219e4b-3bcf-44d5-a465-c9d9b34df802" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Card.rb" afterPath="$PROJECT_DIR$/Card.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Game.rb" afterPath="$PROJECT_DIR$/Game.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hand.rb" afterPath="$PROJECT_DIR$/Hand.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RankEngine.rb" afterPath="$PROJECT_DIR$/RankEngine.rb" />
@@ -31,11 +30,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="RankEngine.rb" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="RankEngine.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/RankEngine.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.26603773" vertical-offset="639" max-vertical-offset="1755">
-                  <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="1240" max-vertical-offset="1770">
+                  <caret line="91" column="69" selection-start-line="91" selection-start-column="69" selection-end-line="91" selection-end-column="69" />
                   <folding />
                 </state>
               </provider>
@@ -44,18 +43,20 @@
           <file leaf-file-name="Hand.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Hand.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="754" max-vertical-offset="1320">
-                  <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-                  <folding />
+                <state vertical-scroll-proportion="0.0" vertical-offset="724" max-vertical-offset="1290">
+                  <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+                  <folding>
+                    <marker date="1400362493000" expanded="true" signature="310:338" placeholder="do ... end" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Game.rb" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="Game.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Game.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="769" max-vertical-offset="1515">
-                  <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.88950276" vertical-offset="1077" max-vertical-offset="1695">
+                  <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -65,11 +66,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="Hand.rb" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="Hand.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Hand.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8508287" vertical-offset="498" max-vertical-offset="1320">
-                  <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="1290">
+                  <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -78,18 +79,18 @@
           <file leaf-file-name="Card.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Card.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1125">
-                  <caret line="29" column="17" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="17" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="10" max-vertical-offset="1125">
+                  <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Game.rb" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="Game.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Game.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="844" max-vertical-offset="1515">
-                  <caret line="68" column="2" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="2" />
+                <state vertical-scroll-proportion="0.86187845" vertical-offset="1062" max-vertical-offset="1695">
+                  <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -111,9 +112,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/Card.rb" />
-        <option value="$PROJECT_DIR$/Game.rb" />
         <option value="$PROJECT_DIR$/Hand.rb" />
         <option value="$PROJECT_DIR$/RankEngine.rb" />
+        <option value="$PROJECT_DIR$/Game.rb" />
       </list>
     </option>
   </component>
@@ -416,7 +417,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="585">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1400362493000" expanded="true" signature="310:338" placeholder="do ... end" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -440,7 +443,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="663">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1400362493000" expanded="true" signature="310:338" placeholder="do ... end" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -464,7 +469,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="663">
           <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding />
+          <folding>
+            <marker date="1400362493000" expanded="true" signature="310:338" placeholder="do ... end" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -509,7 +516,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="663">
           <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding />
+          <folding>
+            <marker date="1400362493000" expanded="true" signature="310:338" placeholder="do ... end" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -580,32 +589,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Card.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1125">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Game.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="769" max-vertical-offset="1515">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="10" max-vertical-offset="1125">
+          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Hand.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="754" max-vertical-offset="1320">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="724" max-vertical-offset="1290">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <marker date="1400362493000" expanded="true" signature="310:338" placeholder="do ... end" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RankEngine.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26603773" vertical-offset="639" max-vertical-offset="1755">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1240" max-vertical-offset="1770">
+          <caret line="91" column="69" selection-start-line="91" selection-start-column="69" selection-end-line="91" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.88950276" vertical-offset="1077" max-vertical-offset="1695">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding />
         </state>
       </provider>

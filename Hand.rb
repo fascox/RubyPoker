@@ -14,11 +14,9 @@ class Hand
 
   def build_from_string(string_hand)
 
+    @hand = []
     cards_on_hand = string_hand.split
-    cards_on_hand.each do |o|
-      # @hand << Card.new(o[1],o[0]) # <-- don't like but works for now
-      @hand << Card.new(o)
-    end
+    cards_on_hand.each { |o| @hand << Card.new(o) }
 
   end
 
