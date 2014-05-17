@@ -1,7 +1,7 @@
 require 'singleton'
 
 
-class RankEngine
+class PokerEngine
   include Singleton
 
   attr_accessor :rankings

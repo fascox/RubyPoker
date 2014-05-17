@@ -13,7 +13,7 @@ def play_hand
   results p1_hand, p2_hand
 end
 
-def play_random
+def play_shuffle
 
   # shuffle new deck cards
   new_deck = Card::deck.shuffle
@@ -21,6 +21,7 @@ def play_random
   p1_hand = Hand.new
   p2_hand = Hand.new
 
+  #
   5.times do
 
     p1_hand << new_deck.pop
@@ -37,6 +38,7 @@ def results(p1_hand, p2_hand)
   p1_score = p1_hand.rank_score
   p2_score = p2_hand.rank_score
 
+  # display results
   puts 'Playing poker...'
   puts '-' * 15
   puts "Player One cards -> #{p1_hand} -> #{p1_hand.rank_desc}"
@@ -47,14 +49,14 @@ def results(p1_hand, p2_hand)
   puts 'Results:'
   puts '-' * 10
 
-  # check both players have no ranks in hand
+  # evaluate high card if both players have no good hand
   if (p1_hand.rank_score + p2_hand.rank_score) < 1000
 
     p1_score = p1_hand.high_card
     p2_score = p2_hand.high_card
 
     # if same high card, game end with a split
-    # (should be improved and consider next high card omn hand)
+    # (should be improved and consider next high card on hand)
     if p1_hand.rank_score == p2_hand.rank_score
       puts "Split."
       exit
@@ -102,6 +104,6 @@ end
 
 
 # play_hand
-play_random
+play_shuffle
 # test
 

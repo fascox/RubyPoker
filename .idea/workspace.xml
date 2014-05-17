@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0219e4b-3bcf-44d5-a465-c9d9b34df802" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/RankEngine.rb" afterPath="$PROJECT_DIR$/PokerEngine.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Game.rb" afterPath="$PROJECT_DIR$/Game.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hand.rb" afterPath="$PROJECT_DIR$/Hand.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RankEngine.rb" afterPath="$PROJECT_DIR$/RankEngine.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RubyPoker.iws" />
@@ -30,11 +30,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="RankEngine.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/RankEngine.rb">
+          <file leaf-file-name="PokerEngine.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/PokerEngine.rb">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0" vertical-offset="1240" max-vertical-offset="1770">
-                  <caret line="91" column="69" selection-start-line="91" selection-start-column="69" selection-end-line="91" selection-end-column="69" />
+                  <caret line="3" column="17" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
@@ -46,7 +46,7 @@
                 <state vertical-scroll-proportion="0.0" vertical-offset="724" max-vertical-offset="1290">
                   <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
                   <folding>
-                    <marker date="1400362493000" expanded="true" signature="310:338" placeholder="do ... end" />
+                    <marker date="1400363667000" expanded="true" signature="312:340" placeholder="do ... end" />
                   </folding>
                 </state>
               </provider>
@@ -55,8 +55,8 @@
           <file leaf-file-name="Game.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Game.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.88950276" vertical-offset="1077" max-vertical-offset="1695">
-                  <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.7513812" vertical-offset="1182" max-vertical-offset="1725">
+                  <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -89,8 +89,8 @@
           <file leaf-file-name="Game.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Game.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.86187845" vertical-offset="1062" max-vertical-offset="1695">
-                  <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+                <state vertical-scroll-proportion="-0.25414366" vertical-offset="903" max-vertical-offset="1725">
+                  <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
@@ -365,7 +365,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39882353" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3282353" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3282353" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -418,7 +418,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="585">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
-            <marker date="1400362493000" expanded="true" signature="310:338" placeholder="do ... end" />
+            <marker date="1400363667000" expanded="true" signature="312:340" placeholder="do ... end" />
           </folding>
         </state>
       </provider>
@@ -444,7 +444,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="663">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <marker date="1400362493000" expanded="true" signature="310:338" placeholder="do ... end" />
+            <marker date="1400363667000" expanded="true" signature="312:340" placeholder="do ... end" />
           </folding>
         </state>
       </provider>
@@ -470,7 +470,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="663">
           <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
-            <marker date="1400362493000" expanded="true" signature="310:338" placeholder="do ... end" />
+            <marker date="1400363667000" expanded="true" signature="312:340" placeholder="do ... end" />
           </folding>
         </state>
       </provider>
@@ -517,7 +517,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="663">
           <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
-            <marker date="1400362493000" expanded="true" signature="310:338" placeholder="do ... end" />
+            <marker date="1400363667000" expanded="true" signature="312:340" placeholder="do ... end" />
           </folding>
         </state>
       </provider>
@@ -600,23 +600,23 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="724" max-vertical-offset="1290">
           <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
-            <marker date="1400362493000" expanded="true" signature="310:338" placeholder="do ... end" />
+            <marker date="1400363667000" expanded="true" signature="312:340" placeholder="do ... end" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RankEngine.rb">
+    <entry file="file://$PROJECT_DIR$/PokerEngine.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1240" max-vertical-offset="1770">
-          <caret line="91" column="69" selection-start-line="91" selection-start-column="69" selection-end-line="91" selection-end-column="69" />
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Game.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.88950276" vertical-offset="1077" max-vertical-offset="1695">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.7513812" vertical-offset="1182" max-vertical-offset="1725">
+          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
           <folding />
         </state>
       </provider>

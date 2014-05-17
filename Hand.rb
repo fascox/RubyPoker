@@ -1,5 +1,5 @@
 require_relative 'Card'
-require_relative 'RankEngine'
+require_relative 'PokerEngine'
 
 class Hand
 
@@ -7,7 +7,7 @@ class Hand
 
   def initialize
 
-    @rules_engine = RankEngine.instance
+    @rules_engine = PokerEngine.instance
     @hand = []
 
   end
