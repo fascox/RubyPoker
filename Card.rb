@@ -2,12 +2,13 @@ class Card
 
   attr_accessor :suit, :val, :face_value
 
-  SUITS_SET = "SDCH"
-  VALS_SET = "a23456789TJQKA"
+  # SUITS_SET = 'CDHS'
+  SUITS_SET =  '♣♦♥♠'
+  VALS_SET  = 'a23456789TJQKA'
 
   SUITS = { 'S' => 0, 'D' =>1, 'C' => 2, 'H' => 3 }
 
-  VALS = { 'a' => 0, '2' =>1, '3' => 2, '4' =>3, '5' => 4, '6' => 5,  '7' => 6, '8' => 7, '9' => 8, 'T' => 9, 'J' => 10, 'Q' => 11, 'K' => 12, 'A' => 13 }
+  VALS = { 'A' => 13, '2' =>1, '3' => 2, '4' =>3, '5' => 4, '6' => 5,  '7' => 6, '8' => 7, '9' => 8, 'T' => 9, 'J' => 10, 'Q' => 11, 'K' =>12 }
 
 
   def initialize(code)
@@ -22,7 +23,7 @@ class Card
       @suit = SUITS[suit]
       @val = VALS[val]
 
-      @face_value = (@suit * 13) + @val
+      # @face_value = (@suit * 13) + @val
 
   end
 
@@ -36,13 +37,33 @@ class Card
     VALS_SET[@val].chr
   end
 
+
   def to_suit
 
     SUITS_SET[@suit].chr
   end
 
   def to_s
-    VALS_SET[@val].chr + SUITS_SET[@suit].chr + " (#{@face_value})"
+    VALS_SET[@val].chr + SUITS_SET[@suit].chr # + " (#{@face_value})"
+  end
+
+
+  # Retrun a complete deck
+  # ----------------------
+  def self.deck
+
+    deck = []
+
+      SUITS.each_key do |s|
+        VALS.each_key do |v|
+
+          next if v == 'a'
+          deck << Card.new( v + s)
+
+        end
+      end
+
+    deck
   end
 
 end

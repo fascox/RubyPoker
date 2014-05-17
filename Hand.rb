@@ -5,19 +5,38 @@ class Hand
 
   attr_accessor :hand, :rank_score, :rank_desc
 
-  def initialize(fmt_card_str)
+  def initialize
 
-
-    @rules = RankEngine.instance
-
+    @rules_engine = RankEngine.instance
     @hand = []
 
-    cards_on_hand = fmt_card_str.split
+  end
 
+  def build_from_string(string_hand)
+
+    cards_on_hand = string_hand.split
     cards_on_hand.each do |o|
       # @hand << Card.new(o[1],o[0]) # <-- don't like but works for now
       @hand << Card.new(o)
     end
+
+  end
+
+  def build_from_set(cards)
+
+    @hand = cards
+
+  end
+
+  def << (card)
+
+    @hand << card
+
+  end
+
+  def validate
+
+    puts "invalid hand" if @hand.size != 5
 
   end
 
@@ -34,30 +53,29 @@ class Hand
     @hand.map {|x| x.to_face }.join
   end
 
+  def rank_score
 
-  def score_hand
+    @rules_engine.rankings.each_key do |rank|
 
-    rankings = [
-                :poker,
-                :flush,
-                :tris,
-                :pair,
-                :high_card
-               ]
-
-    rankings.each do |rank_check|
-
-        @rank_score, @rank_desc = @rules.send rank_check, self
+        @rank_score, @rank_desc = @rules_engine.send rank, self
 
         break if @rank_score > 0
     end
 
+    #@rank_score, @rank_desc = high_card if @rank_score == 0
     @rank_score
   end
 
 
+  # HIGH CARD
+  # ----------------
+  def high_card
 
+    high_card = to_faces.scan(/./).sort.reverse.first
 
+    return Card::weight(high_card) , "High card #{high_card}"
+
+  end
 end
 
 
