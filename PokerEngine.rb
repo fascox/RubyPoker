@@ -31,6 +31,7 @@ class PokerEngine
 
     info = Rakeinfo.new
     info.desc = ' not implemented yet.'
+
     info
   end
 
@@ -163,6 +164,47 @@ class PokerEngine
     info
   end
 
-  # TODO more ranks evaluation
 
+  # FULL HOUSE
+  # ----------------
+  def full(hand)
+
+    info = Rakeinfo.new
+
+    tris = tris(hand)
+    pair = pair(hand)
+
+    if (tris.score > 0 && pair.score > 0 )
+
+      info.card  = tris.card
+      info.score = @rankings[:full][:weight] + Card::weight(info.card)
+      info.desc  = @rankings[:full][:desc]
+
+    end
+
+    info
+  end
+
+  # STRAIGHT FLUSH
+  # ----------------
+  def straflus(hand)
+
+    info = Rakeinfo.new
+
+    straight = straight(hand)
+    flush   = flush(hand)
+
+    if (straight.score > 0 && flush.score > 0 )
+
+      info.card  = straight.card
+      info.score = @rankings[:straflus][:weight] + Card::weight(info.card)
+      info.desc  = @rankings[:straflus][:desc]
+
+    end
+
+    info
+  end
+
+  # TODO
+  # Royal need straight with symbol implementation :(
 end

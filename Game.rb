@@ -2,13 +2,13 @@ require_relative 'Card'
 require_relative 'Hand'
 
 
-def play_hand
+def play_hand(param1 = '8C 7C AC 8C 8C', param2 = '8H 7C 8D 8C 8C')
 
   p1_hand = Hand.new
   p2_hand = Hand.new
 
-  p1_hand.build_from_string '8C 7C AC 8C 8C'
-  p2_hand.build_from_string '8H 7C 8D 8C 8C'
+  p1_hand.build_from_string param1
+  p2_hand.build_from_string param2
 
   results p1_hand, p2_hand
 end
@@ -39,8 +39,6 @@ def results(p1_hand, p2_hand)
   p2_score = p2_hand.rank_score
 
   # display results
-  puts 'Playing poker...'
-  puts '-' * 15
   puts "Player One cards -> #{p1_hand} -> #{p1_hand.rank_desc}"
   puts "Player Two cards -> #{p2_hand} -> #{p2_hand.rank_desc}"
 
@@ -75,7 +73,7 @@ def results(p1_hand, p2_hand)
 
 end
 
-def test
+def play_test
 
     hands_test = [
         'KD 5C 8H 4S KH',
@@ -83,11 +81,13 @@ def test
         'AC AC AH AC 2C',
         '8C 8C AH 8C 8C',
         '8C 7C AC 8C 8C',
+        '6C 7C 8C 9H 2C',
         '5S 2C 3H 4H QH',
         '5S 5C 3H 4H 4H',
         '5S 5C QH QH 4H',
         '2C 3C 4C 5S 6S',
-        '6C 7C 8C 9H TC'
+        '6C 6C QC QH QC',
+        '8C 9C 6C 5C 7C'
 
     ]
 
@@ -97,13 +97,37 @@ def test
 
       hand = Hand.new
       hand.build_from_string h
-      puts "#{hand.to_faces} / #{hand.to_suits} -> #{hand.rank_score}, #{hand.rank_desc}"
+      puts "#{hand.to_faces} / #{hand.to_suits} -> score: #{hand.rank_score.to_s.rjust(5,'0')}, #{hand.rank_desc}"
     end
 
 end
 
+def play_help
 
-# play_hand
-play_shuffle
-# test
+  puts 'options:'
+  puts 'hand  <str1> <str2> - play hands with two formatted string.'
+  puts 'shuffle             - play random hands'
+  puts 'test                - rankings tests'
+  puts 'help                - this help (default)'
+end
 
+
+if ARGV.size < 1
+
+  action = 'help'
+else
+  action = ARGV[0]
+end
+
+
+begin
+
+  puts 'Poker Simulator - by fascox'
+  puts '-' * 15
+
+  self.send "play_#{action}".to_sym, ARGV[1], ARGV[2]
+
+ rescue
+
+  play_help
+end
