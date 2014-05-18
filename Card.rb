@@ -8,7 +8,7 @@ class Card
 
   SUITS = { 'S' => 0, 'D' =>1, 'C' => 2, 'H' => 3 }
 
-  VALS = { 'A' => 13, '2' =>1, '3' => 2, '4' =>3, '5' => 4, '6' => 5,  '7' => 6, '8' => 7, '9' => 8, 'T' => 9, 'J' => 10, 'Q' => 11, 'K' =>12 }
+  VALS = {  '2' =>1, '3' => 2, '4' =>3, '5' => 4, '6' => 5,  '7' => 6, '8' => 7, '9' => 8, 'T' => 9, 'J' => 10, 'Q' => 11, 'K' =>12, 'A' => 13 }
 
 
   def initialize(code)
@@ -60,11 +60,28 @@ class Card
       SUITS.each_key do |s|
         VALS.each_key do |v|
 
-          next if v == 'a'
           deck << Card.new( v + s)
 
         end
       end
+
+    deck
+  end
+
+  # Retrun a restricted deck
+  # ----------------------
+  def self.deck_seven
+
+    deck = []
+
+    SUITS.each_key do |s|
+      VALS.each do |k, v|
+
+        next if v < 6
+        deck << Card.new( k + s)
+
+      end
+    end
 
     deck
   end

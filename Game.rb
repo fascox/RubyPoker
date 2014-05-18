@@ -16,7 +16,7 @@ end
 def play_shuffle
 
   # shuffle new deck cards
-  new_deck = Card::deck.shuffle
+  new_deck = Card::deck_seven.shuffle
 
   p1_hand = Hand.new
   p2_hand = Hand.new
@@ -80,7 +80,7 @@ def results(p1_hand, p2_hand)
     when p1_score < p2_score
       puts "Player Two wins with #{p2_hand.rank_desc}"
     else
-      puts "Split."
+      puts 'Split.'
   end
 
 end
