@@ -1,4 +1,4 @@
-require_relative 'RakeInfo'
+require_relative 'Rankinfo'
 require 'singleton'
 
 
@@ -29,7 +29,7 @@ class PokerEngine
   #
   def method_missing(m, *args, &block)
 
-    info = Rakeinfo.new
+    info = Rankinfo.new
     info.desc = ' not implemented yet.'
 
     info
@@ -40,7 +40,7 @@ class PokerEngine
   # ----------------
   def highcard(hand)
 
-    info = Rakeinfo.new
+    info = Rankinfo.new
 
     info.card  = hand.hand.sort_by { |c| c.face_value }.last
     info.score = @rankings[:highcard][:weight] + info.card.face_value
@@ -55,7 +55,7 @@ class PokerEngine
 # ----------------
   def pair(hand)
 
-    info = Rakeinfo.new
+    info = Rankinfo.new
 
     sorted_faces = hand.to_faces.scan(/./).sort.reverse.join
     pattern = sorted_faces.scan(/((.)\2{1,})/).map(&:first).reject {|c| c.size != 2}.first
@@ -75,7 +75,7 @@ class PokerEngine
 # ----------------
   def twopair(hand)
 
-    info = Rakeinfo.new
+    info = Rankinfo.new
 
     sorted_faces = hand.to_faces.scan(/./).sort.reverse.join
     pattern = sorted_faces.scan(/((.)\2{1,})/).map(&:first)
@@ -94,7 +94,7 @@ class PokerEngine
 # ----------------
   def tris(hand)
 
-    info = Rakeinfo.new
+    info = Rankinfo.new
 
     sorted_faces = hand.to_faces.scan(/./).sort.reverse.join
     pattern = sorted_faces.scan(/((.)\2{1,})/).map(&:first).reject {|c| c.size != 3}.first
@@ -113,7 +113,7 @@ class PokerEngine
  # ----------------
   def poker(hand)
 
-    info = Rakeinfo.new
+    info = Rankinfo.new
 
     sorted_faces = hand.to_faces.scan(/./).sort.reverse.join
     pattern = sorted_faces.scan(/((.)\2{1,})/).map(&:first).reject {|c| c.size != 4}.first
@@ -132,7 +132,7 @@ class PokerEngine
   # ----------------
   def flush(hand)
 
-    info = Rakeinfo.new
+    info = Rankinfo.new
 
     if hand.to_suits.scan(/./).uniq.length == 1
 
@@ -149,7 +149,7 @@ class PokerEngine
   # ----------------
   def straight(hand)
 
-    info = Rakeinfo.new
+    info = Rankinfo.new
 
     pattern = hand.to_faces.scan(/./).sort.reverse
 
@@ -169,7 +169,7 @@ class PokerEngine
   # ----------------
   def full(hand)
 
-    info = Rakeinfo.new
+    info = Rankinfo.new
 
     tris = tris(hand)
     pair = pair(hand)
@@ -189,7 +189,7 @@ class PokerEngine
   # ----------------
   def straflus(hand)
 
-    info = Rakeinfo.new
+    info = Rankinfo.new
 
     straight = straight(hand)
     flush   = flush(hand)

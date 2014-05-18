@@ -1,4 +1,4 @@
-class Rakeinfo
+class Rankinfo
 
   attr_accessor :score, :desc, :card
 

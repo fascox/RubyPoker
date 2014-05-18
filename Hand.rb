@@ -16,12 +16,16 @@ class Hand
 
     @hand = []
 
-    begin
       cards_on_hand = string_hand.split
-      cards_on_hand.each { |o| @hand << Card.new(o) }
-    rescue
-      @hand = []
-    end
+      cards_on_hand.each do |o|
+
+        begin
+          @hand << Card.new(o)
+        rescue
+          #@hand.pop
+        end
+
+      end
   end
 
   def build_from_set(cards)
