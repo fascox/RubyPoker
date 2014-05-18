@@ -34,7 +34,7 @@ class Hand
 
   def validate
 
-    puts "invalid hand" if @hand.size != 5
+    @hand.size == 5
 
   end
 
@@ -53,27 +53,33 @@ class Hand
 
   def rank_score
 
+    evaluate
+  end
+
+  def evaluate
+
+    # guard
+    unless validate
+
+      @rank_score = -1
+      @rank_desc  = 'invalid hand'
+      return
+    end
+
+
     @rules_engine.rankings.each_key do |rank|
 
-        @rank_score, @rank_desc = @rules_engine.send rank, self
+        info = @rules_engine.send rank, self
+
+        @rank_score = info.score
+        @rank_desc  = "#{info.desc} with #{info.card}"
 
         break if @rank_score > 0
     end
 
-    #@rank_score, @rank_desc = high_card if @rank_score == 0
     @rank_score
   end
 
-
-  # HIGH CARD
-  # ----------------
-  def high_card
-
-    high_card = to_faces.scan(/./).sort.reverse.first
-
-    return Card::weight(high_card) , "High card #{high_card}"
-
-  end
 end
 
 

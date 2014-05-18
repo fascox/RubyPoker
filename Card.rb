@@ -23,7 +23,7 @@ class Card
       @suit = SUITS[suit]
       @val = VALS[val]
 
-      # @face_value = (@suit * 13) + @val
+      @face_value = @val # (@suit * 13) + @val
 
   end
 

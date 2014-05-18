@@ -50,18 +50,18 @@ def results(p1_hand, p2_hand)
   puts '-' * 10
 
   # evaluate high card if both players have no good hand
-  if (p1_hand.rank_score + p2_hand.rank_score) < 1000
-
-    p1_score = p1_hand.high_card
-    p2_score = p2_hand.high_card
-
-    # if same high card, game end with a split
-    # (should be improved and consider next high card on hand)
-    if p1_hand.rank_score == p2_hand.rank_score
-      puts "Split."
-      exit
-    end
-  end
+  # if (p1_hand.rank_score + p2_hand.rank_score) < 1000
+  #
+  #   p1_score = p1_hand.high_card
+  #   p2_score = p2_hand.high_card
+  #
+  #   # if same high card, game end with a split
+  #   # (should be improved and consider next high card on hand)
+  #   if p1_hand.rank_score == p2_hand.rank_score
+  #     puts "Split."
+  #     exit
+  #   end
+  # end
 
   # check winner or split
   case

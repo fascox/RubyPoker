@@ -1,3 +1,4 @@
+require_relative 'RakeInfo'
 require 'singleton'
 
 
@@ -18,28 +19,54 @@ class PokerEngine
           :tris     => { :weight => 3000, :desc => 'Three of a kind'},
           :twopair  => { :weight => 2000, :desc => 'Two Pair'},
           :pair     => { :weight => 1000, :desc => 'One Pair'},
+          :highcard => { :weight => 0,    :desc => 'High Card'},
      }
 
   end
 
+
+  # RANKS NOT IMPLEMENTED YET GOES HERE
+  #
   def method_missing(m, *args, &block)
-    return 0, 'not implemented yet.'
+
+    info = Rakeinfo.new
+    info.desc = ' not implemented yet.'
+    info
   end
 
 
+  # HIGH CARD
+  # ----------------
+  def highcard(hand)
 
+    info = Rakeinfo.new
+
+    info.card  = hand.hand.sort_by { |c| c.face_value }.last
+    info.score = @rankings[:highcard][:weight] + info.card.face_value
+    info.desc  = @rankings[:highcard][:desc]
+
+    info
+
+  end
 
 
 # PAIR
 # ----------------
   def pair(hand)
 
+    info = Rakeinfo.new
+
     sorted_faces = hand.to_faces.scan(/./).sort.reverse.join
     pattern = sorted_faces.scan(/((.)\2{1,})/).map(&:first).reject {|c| c.size != 2}.first
 
-    return 0 , '' if pattern.nil?
-    card = pattern.squeeze
-    return @rankings[:pair][:weight] + Card::weight(card), @rankings[:pair][:desc] + " of #{card}"
+    unless pattern.nil?
+
+      info.card  = pattern.squeeze
+      info.score = @rankings[:pair][:weight] + Card::weight(info.card)
+      info.desc  = @rankings[:pair][:desc]
+    end
+
+    info
 
   end
 
@@ -47,49 +74,73 @@ class PokerEngine
 # ----------------
   def twopair(hand)
 
+    info = Rakeinfo.new
+
     sorted_faces = hand.to_faces.scan(/./).sort.reverse.join
     pattern = sorted_faces.scan(/((.)\2{1,})/).map(&:first)
 
-    return 0 , '' if pattern.empty? ||  pattern.count < 2
+    if !pattern.empty? and pattern.count == 2
 
-    card = pattern.first.squeeze
-    return @rankings[:twopair][:weight] + Card::weight(card), @rankings[:twopair][:desc] + " of #{card}"
+      info.card  = pattern.first.squeeze
+      info.score = @rankings[:twopair][:weight] + Card::weight(info.card)
+      info.desc  = @rankings[:twopair][:desc]
+    end
 
+    info
   end
 
 # THREE OF A KIND
 # ----------------
   def tris(hand)
 
+    info = Rakeinfo.new
+
     sorted_faces = hand.to_faces.scan(/./).sort.reverse.join
     pattern = sorted_faces.scan(/((.)\2{1,})/).map(&:first).reject {|c| c.size != 3}.first
 
-    return 0, '' if pattern.nil?
-    card = pattern.squeeze
-    return @rankings[:tris][:weight] + Card::weight(card), @rankings[:tris][:desc] + " of #{card}"
+    unless pattern.nil?
 
+      info.card  = pattern.squeeze
+      info.score = @rankings[:tris][:weight] + Card::weight(info.card)
+      info.desc  = @rankings[:tris][:desc]
+    end
+
+    info
   end
 
  # POKER
  # ----------------
   def poker(hand)
 
+    info = Rakeinfo.new
+
     sorted_faces = hand.to_faces.scan(/./).sort.reverse.join
     pattern = sorted_faces.scan(/((.)\2{1,})/).map(&:first).reject {|c| c.size != 4}.first
 
-    return 0, '' if pattern.nil?
-    card = pattern.squeeze
-    return @rankings[:poker][:weight] + Card::weight(card), @rankings[:poker][:desc] + " of #{card}"
+    unless pattern.nil?
 
+      info.card  = pattern.squeeze
+      info.score = @rankings[:poker][:weight] + Card::weight(info.card)
+      info.desc  = @rankings[:poker][:desc]
+    end
+
+    info
   end
 
   # FLUSH
   # ----------------
   def flush(hand)
 
-    return 0, '' if hand.to_suits.scan(/./).uniq.length > 1
-    card = hand.to_suits.squeeze
-    return @rankings[:flush][:weight],  @rankings[:flush][:desc] + " of #{card}"
+    info = Rakeinfo.new
+
+    if hand.to_suits.scan(/./).uniq.length == 1
+
+      info.card  = hand.to_suits.squeeze
+      info.score = @rankings[:flush][:weight]
+      info.desc  = @rankings[:flush][:desc]
+    end
+
+    info
 
   end
 
@@ -97,15 +148,19 @@ class PokerEngine
   # ----------------
   def straight(hand)
 
+    info = Rakeinfo.new
+
     pattern = hand.to_faces.scan(/./).sort.reverse
 
     if (pattern.max.to_i - pattern.min.to_i == 4) && pattern.uniq.length == 5
 
-      return @rankings[:straight][:weight], @rankings[:straight][:desc]
+      info.card  = pattern.max
+      info.score = @rankings[:straight][:weight] + Card::weight(info.card)
+      info.desc  = @rankings[:straight][:desc]
 
     end
 
-    return 0, ''
+    info
   end
 
   # TODO more ranks evaluation
