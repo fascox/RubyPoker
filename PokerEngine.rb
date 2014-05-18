@@ -206,5 +206,5 @@ class PokerEngine
   end
 
   # TODO
-  # Royal need straight with symbol implementation :(
+  # Royal need straight with figures implementation :(
 end
