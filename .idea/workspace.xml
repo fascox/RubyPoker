@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0219e4b-3bcf-44d5-a465-c9d9b34df802" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Game.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Card.rb" afterPath="$PROJECT_DIR$/Card.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Game.rb" afterPath="$PROJECT_DIR$/Game.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PokerEngine.rb" afterPath="$PROJECT_DIR$/PokerEngine.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hand.rb" afterPath="$PROJECT_DIR$/Hand.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/RubyPoker.iml" afterPath="$PROJECT_DIR$/.idea/RubyPoker.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RubyPoker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,10 +32,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="PokerEngine.rb" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="PokerEngine.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/PokerEngine.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8018868" vertical-offset="2695" max-vertical-offset="3225">
+                <state vertical-scroll-proportion="0.0" vertical-offset="2515" max-vertical-offset="3225">
                   <caret line="208" column="36" selection-start-line="208" selection-start-column="36" selection-end-line="208" selection-end-column="36" />
                   <folding />
                 </state>
@@ -41,18 +45,22 @@
           <file leaf-file-name="Hand.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Hand.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="837" max-vertical-offset="1380">
-                  <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-                  <folding />
+                <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="1440">
+                  <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+                  <folding>
+                    <marker date="1400406028000" expanded="true" signature="328:353" placeholder="{ ... }" />
+                    <marker date="1400406028000" expanded="true" signature="769:1130" placeholder=" ... end" />
+                    <marker date="1400406028000" expanded="true" signature="787:882" placeholder="unless ... end" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Game.rb" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="Game.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Game.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="915" max-vertical-offset="1950">
-                  <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+                <state vertical-scroll-proportion="2.8723404" vertical-offset="15" max-vertical-offset="2370">
+                  <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -65,28 +73,28 @@
           <file leaf-file-name="Hand.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Hand.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="1380">
-                  <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="4" max-vertical-offset="1440">
+                  <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Card.rb" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="Card.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Card.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="1125">
-                  <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+                <state vertical-scroll-proportion="0.67021275" vertical-offset="105" max-vertical-offset="1170">
+                  <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Game.rb" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="Game.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Game.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6886792" vertical-offset="1345" max-vertical-offset="1950">
-                  <caret line="114" column="14" selection-start-line="114" selection-start-column="14" selection-end-line="114" selection-end-column="14" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="1450" max-vertical-offset="2370">
+                  <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -119,10 +127,10 @@
       <list>
         <option value="$PROJECT_DIR$/RankEngine.rb" />
         <option value="$PROJECT_DIR$/RakeInfo.rb" />
-        <option value="$PROJECT_DIR$/Hand.rb" />
-        <option value="$PROJECT_DIR$/Card.rb" />
-        <option value="$PROJECT_DIR$/Game.rb" />
         <option value="$PROJECT_DIR$/PokerEngine.rb" />
+        <option value="$PROJECT_DIR$/Hand.rb" />
+        <option value="$PROJECT_DIR$/Game.rb" />
+        <option value="$PROJECT_DIR$/Card.rb" />
       </list>
     </option>
   </component>
@@ -187,8 +195,27 @@
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="true" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RunManager" selected="Ruby.Game">
+    <configuration default="false" name="IRB console: RubyPoker" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
+      <module name="RubyPoker" />
+      <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <IRB_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <IRB_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <IRB_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <IRB_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$USER_HOME$/.rbenv/versions/2.1.0/bin/irb" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="--prompt simple" />
+      <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
     <configuration default="false" name="Card" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="RubyPoker" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -224,43 +251,6 @@
       <RunnerSettings RunnerId="RubyDebugRunner" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Game" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
-      <module name="RubyPoker" />
-      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/Game.rb" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
-      <RunnerSettings RunnerId="RubyDebugRunner" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="IRB console: RubyPoker" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
-      <module name="RubyPoker" />
-      <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <IRB_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <IRB_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <IRB_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <IRB_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$USER_HOME$/.rbenv/versions/2.1.0/bin/irb" />
-      <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="--prompt simple" />
-      <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
@@ -346,17 +336,16 @@
       <method />
     </configuration>
     <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Ruby.Card" />
-      <item index="1" class="java.lang.String" itemvalue="Ruby.Hand" />
-      <item index="2" class="java.lang.String" itemvalue="Ruby.Game" />
-      <item index="3" class="java.lang.String" itemvalue="IRB console.IRB console: RubyPoker" />
+      <item index="0" class="java.lang.String" itemvalue="IRB console.IRB console: RubyPoker" />
+      <item index="1" class="java.lang.String" itemvalue="Ruby.Game" />
+      <item index="2" class="java.lang.String" itemvalue="Ruby.Card" />
+      <item index="3" class="java.lang.String" itemvalue="Ruby.Hand" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Ruby.Game" />
-        <item index="1" class="java.lang.String" itemvalue="IRB console.IRB console: RubyPoker" />
-        <item index="2" class="java.lang.String" itemvalue="Ruby.Hand" />
-        <item index="3" class="java.lang.String" itemvalue="Ruby.Card" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="IRB console.IRB console: RubyPoker" />
+        <item index="1" class="java.lang.String" itemvalue="Ruby.Hand" />
+        <item index="2" class="java.lang.String" itemvalue="Ruby.Card" />
       </list>
     </recent_temporary>
   </component>
@@ -369,10 +358,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24930556" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39882353" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39882353" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3282353" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3282353" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39882353" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282353" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -422,16 +411,16 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/Hand.rb</url>
-          <line>74</line>
+          <line>78</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/Hand.rb</url>
-          <line>61</line>
+          <line>65</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="24" />
+      <option name="time" value="26" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -648,14 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/ruby-debug-ide-0.4.23.beta1/lib/ruby-debug-ide.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1114" max-vertical-offset="2625">
-          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RakeInfo.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
@@ -664,34 +645,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Card.rb">
+    <entry file="file://$PROJECT_DIR$/PokerEngine.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="1125">
-          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2515" max-vertical-offset="3225">
+          <caret line="208" column="36" selection-start-line="208" selection-start-column="36" selection-end-line="208" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hand.rb">
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/ruby-debug-ide-0.4.23.beta1/lib/ruby-debug-ide.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="837" max-vertical-offset="1380">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.43829787" vertical-offset="1114" max-vertical-offset="2625">
+          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Game.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="915" max-vertical-offset="1950">
-          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1450" max-vertical-offset="2370">
+          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PokerEngine.rb">
+    <entry file="file://$PROJECT_DIR$/Hand.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8018868" vertical-offset="2695" max-vertical-offset="3225">
-          <caret line="208" column="36" selection-start-line="208" selection-start-column="36" selection-end-line="208" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="4" max-vertical-offset="1440">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Card.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67021275" vertical-offset="105" max-vertical-offset="1170">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding />
         </state>
       </provider>

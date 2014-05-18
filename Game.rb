@@ -32,6 +32,32 @@ def play_shuffle
   results p1_hand, p2_hand
 end
 
+
+def play_holdem
+
+  # shuffle new deck cards
+  new_deck = Card::deck.shuffle
+
+  p1_hand = Hand.new
+  p2_hand = Hand.new
+
+  5.times do
+
+    deal = new_deck.pop
+    p1_hand << deal
+    p2_hand << deal
+  end
+
+  2.times do
+
+    p1_hand << new_deck.pop
+    p2_hand << new_deck.pop
+
+  end
+
+  results p1_hand, p2_hand
+end
+
 def results(p1_hand, p2_hand)
 
   # evaluate score
@@ -62,6 +88,7 @@ end
 def play_test
 
     hands_test = [
+        'KD 5C 8Z 4S KH',
         'KD 5C 8H 4S KH',
         'AC AC AH 3C 2C',
         'AC AC AH AC 2C',
@@ -93,6 +120,7 @@ def play_help
   puts 'options:'
   puts 'hand  <str1> <str2> - play hands with two formatted string.'
   puts 'shuffle             - play random hands'
+  puts 'holdem              - play holdem with 7 cards'
   puts 'test                - rankings tests'
   puts 'help                - this help (default)'
 end

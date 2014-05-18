@@ -15,9 +15,13 @@ class Hand
   def build_from_string(string_hand)
 
     @hand = []
-    cards_on_hand = string_hand.split
-    cards_on_hand.each { |o| @hand << Card.new(o) }
 
+    begin
+      cards_on_hand = string_hand.split
+      cards_on_hand.each { |o| @hand << Card.new(o) }
+    rescue
+      @hand = []
+    end
   end
 
   def build_from_set(cards)
@@ -34,7 +38,7 @@ class Hand
 
   def validate
 
-    @hand.size == 5
+    @hand.size == 5 || @hand.size == 7
 
   end
 

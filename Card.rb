@@ -14,8 +14,8 @@ class Card
   def initialize(code)
 
       v, s = code.scan(/./)
-      builder v, s
 
+      builder v, s
   end
 
   def builder(val, suit)
@@ -24,6 +24,9 @@ class Card
       @val = VALS[val]
 
       @face_value = @val # (@suit * 13) + @val
+
+      # GUARD
+      raise StandardError if @suit.nil? || @val.nil?
 
   end
 
