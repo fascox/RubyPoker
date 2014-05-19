@@ -1,11 +1,11 @@
 class Rankinfo
 
-  attr_accessor :score, :desc, :card
+	attr_accessor :score, :desc, :card
 
-  def initialize
+	def initialize
 
-    @score = 0
-    @desc = ''
-    @card = ''
-  end
+		@score = 0
+		@desc  = ''
+		@card  = ''
+	end
 end

@@ -3,90 +3,90 @@ require_relative 'PokerEngine'
 
 class Hand
 
-  attr_accessor :hand, :rank_score, :rank_desc
+	attr_accessor :hand, :rank_score, :rank_desc
 
-  def initialize
+	def initialize
 
-    @rules_engine = PokerEngine.instance
-    @hand = []
+		@rules_engine = PokerEngine.instance
+		@hand         = []
 
-  end
+	end
 
-  def build_from_string(string_hand)
+	def build_from_string(string_hand)
 
-    @hand = []
+		@hand = []
 
-      cards_on_hand = string_hand.split
-      cards_on_hand.each do |o|
+		cards_on_hand = string_hand.split
+		cards_on_hand.each do |o|
 
-        begin
-          @hand << Card.new(o)
-        rescue
-          #@hand.pop
-        end
+			begin
+				@hand << Card.new(o)
+			rescue
+				#@hand.pop
+			end
 
-      end
-  end
+		end
+	end
 
-  def build_from_set(cards)
+	def build_from_set(cards)
 
-    @hand = cards
+		@hand = cards
 
-  end
+	end
 
-  def << (card)
+	def << (card)
 
-    @hand << card
+		@hand << card
 
-  end
+	end
 
-  def validate
+	def validate
 
-    @hand.size == 5 || @hand.size == 7
+		@hand.size == 5 || @hand.size == 7
 
-  end
+	end
 
-  def to_s
-    @hand.join(' ')
-  end
+	def to_s
+		@hand.join(' ')
+	end
 
-  def to_suits
-      @hand.map {|x| x.to_suit }.join
-  end
+	def to_suits
+		@hand.map { |x| x.to_suit }.join
+	end
 
-  def to_faces
+	def to_faces
 
-    @hand.map {|x| x.to_face }.join
-  end
+		@hand.map { |x| x.to_face }.join
+	end
 
-  def rank_score
+	def rank_score
 
-    evaluate
-  end
+		evaluate
+	end
 
-  def evaluate
+	def evaluate
 
-    # guard
-    unless validate
+		# guard
+		unless validate
 
-      @rank_score = -1
-      @rank_desc  = 'invalid hand'
-      return
-    end
+			@rank_score = -1
+			@rank_desc  = 'invalid hand'
+			return
+		end
 
 
-    @rules_engine.rankings.each_key do |rank|
+		@rules_engine.rankings.each_key do |rank|
 
-        info = @rules_engine.send rank, self
+			info = @rules_engine.send rank, self
 
-        @rank_score = info.score
-        @rank_desc  = "#{info.desc} with #{info.card}"
+			@rank_score = info.score
+			@rank_desc  = "#{info.desc} with #{info.card}"
 
-        break if @rank_score > 0
-    end
+			break if @rank_score > 0
+		end
 
-    @rank_score
-  end
+		@rank_score
+	end
 
 end
 
