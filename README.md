@@ -36,8 +36,8 @@ A poker hand consists of 5 cards dealt from the deck. Poker hands are ranked by 
 
 ### Command line options
 
-	hand  str1 str2     - play hands with two formatted string
+	hand  str1 str2     - compare two hands passed as strings (ex. '8C 7C AC 8C 8C'')
 	shuffle             - play random hands
-	holdem              - play holdem with 7 cards
+	holdem              - play with 7 cards
 	test                - rankings tests
 	help                - this help (default)
