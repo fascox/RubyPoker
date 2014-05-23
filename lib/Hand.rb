@@ -59,6 +59,11 @@ class Hand
 		@hand.map { |x| x.to_face }.join
 	end
 
+	def to_values
+
+		@hand.map { |x| x.val }
+	end
+
 	def rank_score
 
 		evaluate

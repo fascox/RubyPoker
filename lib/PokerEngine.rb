@@ -151,11 +151,12 @@ class PokerEngine
 
 		info = Rankinfo.new
 
-		pattern = hand.to_faces.scan(/./).sort.reverse
+		 # pattern = hand.to_faces.scan(/./).sort.reverse
+		 pattern = hand.to_values.sort.reverse
 
-		if (pattern.max.to_i - pattern.min.to_i == 4) && pattern.uniq.length == 5
+		if   pattern.uniq.length == 5 && (pattern.max - pattern.min == 4)
 
-			info.card  = pattern.max
+			info.card  = Card::face(pattern.max)
 			info.score = @rankings[:straight][:weight] + Card::weight(info.card)
 			info.desc  = @rankings[:straight][:desc]
 
@@ -186,7 +187,7 @@ class PokerEngine
 	end
 
 	# STRAIGHT FLUSH
-	# ----------------
+	# --------------
 	def straflus(hand)
 
 		info = Rankinfo.new
@@ -205,6 +206,23 @@ class PokerEngine
 		info
 	end
 
-	# TODO
-	# Royal need straight with figures implementation :(
+	# ROYAL FLUSH
+	# --------------
+	def royal(hand)
+
+		info = Rankinfo.new
+
+		straight = straight(hand)
+		flush    = flush(hand)
+
+		if (straight.score > 0 && flush.score > 0 && straight.card == 'A')
+
+			info.card  = straight.card
+			info.score = @rankings[:royal][:weight] + Card::weight(info.card)
+			info.desc  = @rankings[:royal][:desc]
+
+		end
+
+		info
+	end
 end

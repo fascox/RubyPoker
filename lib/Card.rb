@@ -6,7 +6,7 @@ class Card
   SUITS_SET =  '♣♦♥♠'
   VALS_SET  = 'a23456789TJQKA'
 
-  SUITS = { 'S' => 0, 'D' =>1, 'C' => 2, 'H' => 3 }
+  SUITS = { 'C' => 0, 'D' =>1, 'S' => 2, 'H' => 3 }
 
   VALS = {  '2' =>1, '3' => 2, '4' =>3, '5' => 4, '6' => 5,  '7' => 6, '8' => 7, '9' => 8, 'T' => 9, 'J' => 10, 'Q' => 11, 'K' =>12, 'A' => 13 }
 
@@ -35,11 +35,15 @@ class Card
     VALS[face]
   end
 
+  def self.face(val)
+
+	  VALS.key(val)
+  end
+
   def to_face
 
     VALS_SET[@val].chr
   end
-
 
   def to_suit
 
@@ -47,6 +51,7 @@ class Card
   end
 
   def to_s
+
     VALS_SET[@val].chr + SUITS_SET[@suit].chr # + " (#{@face_value})"
   end
 
@@ -68,8 +73,8 @@ class Card
     deck
   end
 
-  # Retrun a restricted deck
-  # ----------------------
+  # Retrun a restricted deck (7 to A)
+  # --------------------------------
   def self.deck_seven
 
     deck = []
