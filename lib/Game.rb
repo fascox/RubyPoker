@@ -88,20 +88,23 @@ end
 def play_test
 
 	hands_test = [
+
 			'KD 5C 8Z 4S KH',
-			'KD 5C 8H 4S KH',
-			'AC AC AH 3C 2C',
-			'AC AC AH AC 2C',
-			'8C 8C AH 8C 8C',
-			'8C 7C AC 8C 8C',
 			'6C 7C 8C 9H 2C',
 			'5S 2C 3H 4H QH',
+			'KD 5C 8H 4S KH',
 			'5S 5C 3H 4H 4H',
 			'5S 5C QH QH 4H',
+			'AC AC AH 3C 2C',
 			'2C 3C 4C 5S 6S',
+			'JD KC TH QS 9H',
+			'JD KC TH QS AH',
+			'8C 7C AC 8C 8C',
 			'6C 6C QC QH QC',
-			'8C 9C 6C 5C 7C'
-
+			'8C 8C AH 8C 8C',
+			'AC AC AH AC 2C',
+			'8C 9C 6C 5C 7C',
+			'JD KD TD QD AD'
 	]
 
 	puts 'Testing...'

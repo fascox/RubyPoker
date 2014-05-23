@@ -33,3 +33,11 @@ A poker hand consists of 5 cards dealt from the deck. Poker hands are ranked by 
 
 9. Straight flush: 5 cards of the same suit with consecutive values. Ranked by the highest card in the hand.
 
+
+### Command line options
+
+* hand  <str1> <str2> - play hands with two formatted string
+* shuffle             - play random hands
+* holdem              - play holdem with 7 cards
+* test                - rankings tests
+* help                - this help (default)
