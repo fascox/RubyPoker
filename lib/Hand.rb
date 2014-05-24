@@ -3,7 +3,7 @@ require_relative 'PokerEngine'
 
 class Hand
 
-	attr_accessor :hand, :rank_score, :rank_desc
+	attr_accessor :hand, :rank, :rank_score, :rank_desc
 
 	def initialize
 
@@ -84,6 +84,7 @@ class Hand
 
 			info = @rules_engine.send rank, self
 
+			@rank = info.desc
 			@rank_score = info.score
 			@rank_desc  = "#{info.desc} with #{info.card}"
 

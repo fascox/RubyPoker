@@ -120,6 +120,33 @@ class Game
 
 	end
 
+
+	def play_stat
+
+
+		stat = Hash.new(0)
+
+		10000.times do
+
+			# shuffle new deck cards
+			new_deck = Card::deck_seven.shuffle
+
+			p1_hand = Hand.new
+
+			5.times do
+
+				p1_hand << new_deck.pop
+			end
+
+			p1_hand.evaluate
+			stat[p1_hand.rank] += 1
+
+		end
+
+		p stat.sort_by { |k, v| v }.reverse
+
+	end
+
 	def play_help
 
 		puts 'options:'
