@@ -16,13 +16,17 @@ begin
 
 	game = Game.new
 
-	if action == 'hand'
-		game.send "play_#{action}".to_sym, ARGV[1], ARGV[2]
-	else
-		game.send "play_#{action}".to_sym
+	case action
+		when 'hand'
+			game.send "play_#{action}".to_sym, ARGV[1], ARGV[2]
+		when 'stats'
+			game.send "play_#{action}".to_sym, ARGV[1]
+		else
+			game.send "play_#{action}".to_sym
 	end
 
 rescue
 
 	game.play_help
 end
+

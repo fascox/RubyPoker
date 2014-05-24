@@ -121,12 +121,16 @@ class Game
 	end
 
 
-	def play_stat
+	def play_stats(t)
 
+		t ||= 5000
 
+		t = t.to_i
+
+		puts "Running stats on #{t} times...\n\tplease wait"
 		stat = Hash.new(0)
 
-		10000.times do
+		t.times do
 
 			# shuffle new deck cards
 			new_deck = Card::deck_seven.shuffle
@@ -143,8 +147,11 @@ class Game
 
 		end
 
-		p stat.sort_by { |k, v| v }.reverse
+		results = stat.sort_by { |k, v| v }.reverse
 
+		puts "\nCalculated statistics:\n"
+		results.each { |k, v| print "\t#{k.ljust 15}\t#{v.to_s.rjust 4} (#{(v * 100) / t }%)\n" }
+		puts "done."
 	end
 
 	def play_help

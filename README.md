@@ -1,7 +1,10 @@
 RubyPoker
 =========
 
-Simple implementation of a Poker simulator
+Simple implementation of a Poker ranking evaluation made for a test interview.
+
+
+### Test Description
 
 - Given a single poker hand, returns it's rank (see details of ranks below) 
 - Given 2 poker hands as input, compares them and return a result indicating which hand, if any, is the highest
@@ -40,4 +43,5 @@ A poker hand consists of 5 cards dealt from the deck. Poker hands are ranked by 
 	shuffle             - play random hands
 	holdem              - play with 7 cards
 	test                - rankings tests
+	stats nTime         - run statistics on nTime hands (default=5000)
 	help                - this help (default)
