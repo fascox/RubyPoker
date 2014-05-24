@@ -43,5 +43,5 @@ A poker hand consists of 5 cards dealt from the deck. Poker hands are ranked by 
 	shuffle             - play random hands
 	holdem              - play with 7 cards
 	test                - rankings tests
-	stats <ntime>         - run statistics on ntime random hands (default=5000)
+	stats <ntime>       - run statistics on ntime random hands (default=5000)
 	help                - this help (default)
