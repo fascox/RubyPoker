@@ -11,7 +11,7 @@ end
 begin
 
 	puts
-	puts 'Poker Simulator - by fascox'
+	puts 'Poker ranking evaluator - by fascox'
 	puts '-' * 27
 
 	game = Game.new

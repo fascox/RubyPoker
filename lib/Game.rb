@@ -156,11 +156,13 @@ class Game
 
 	def play_help
 
-		puts 'options:'
-		puts 'hand  <str1> <str2> - play hands with two formatted string.'
+		puts 'available options:'
+		puts ''
+		puts 'hand <str1> <str2>  - compare two hands passed as formatted strings like "9C TD JH QS KS"'
 		puts 'shuffle             - play random hands'
 		puts 'holdem              - play holdem with 7 cards'
 		puts 'test                - rankings tests'
+		puts 'stats <ntime>       - run statistics on ntime random hands (default=5000)'
 		puts 'help                - this help (default)'
 	end
 

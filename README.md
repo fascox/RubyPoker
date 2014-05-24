@@ -39,9 +39,9 @@ A poker hand consists of 5 cards dealt from the deck. Poker hands are ranked by 
 
 ### Command line options
 
-	hand  str1 str2     - compare two hands passed as strings (ex. '8C 7C AC 8C 8C'')
+	hand <str1> <str2>  - compare two hands passed as formatted strings like "9C TD JH QS KS"
 	shuffle             - play random hands
 	holdem              - play with 7 cards
 	test                - rankings tests
-	stats nTime         - run statistics on nTime hands (default=5000)
+	stats <ntime>         - run statistics on ntime random hands (default=5000)
 	help                - this help (default)
